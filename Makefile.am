@@ -5,6 +5,9 @@ libtmc_la_CFLAGS = -I$(abs_top_srcdir)/include -D_GNU_SOURCE
 
 bin_PROGRAMS = isol-interrupt-mon isol-test app-ctl
 
+pkgconfigdir = $(libdir)/pkgconfig
+pkgconfig_DATA = libtmc.pc
+
 isol_interrupt_mon_SOURCES = isol-interrupt-mon.c
 
 isol_test_SOURCES = isol-test.c

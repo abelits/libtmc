@@ -14,5 +14,5 @@ AX_PTHREAD([CC="$PTHREAD_CC"
 	    [AC_MSG_FAILURE([pthread library required])])
 AC_CHECK_LIB([rt], [shm_unlink], [LIBS="$LIBS -lrt"])
 AC_CHECK_FUNCS([renameat2])
-AC_CONFIG_FILES([Makefile include/Makefile])
+AC_CONFIG_FILES([Makefile include/Makefile libtmc.pc:libtmc.pc.in])
 AC_OUTPUT
